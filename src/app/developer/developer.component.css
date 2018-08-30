@@ -1,0 +1,20 @@
+.alignRight{
+	margin-right: 1%;
+	width: 95%;
+	min-height: 85vh;
+}
+
+.box1{
+	position: absolute;
+	right: 10%;
+	bottom: 1.5%;
+	width: 60%;
+	height: 60%;
+}
+
+.mbox{
+	margin-right: 0%;
+	margin-left: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}

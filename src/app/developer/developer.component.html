@@ -1,0 +1,17 @@
+<div class = "border alignRight">
+	<div class = "row">
+	  <div class = "mbox" *ngFor="let values of MyArrayType; index as i">
+	    <app-card [Text] = "values" [parent]="self" [i]="i"></app-card>
+	  </div>
+	</div>
+	<div class = "row">
+		<div class = "container border box1">
+			<form #f= "ngForm">
+				<p>Name: </p><input type = "text" [(ngModel)] = "n" name = "name" style="width:70%" required><br><br>
+				<p> Desc: </p><textarea style="width :70%" rows = 8 [(ngModel)] = "d" name = "desc"></textarea><br><br>
+				<button type = "button" (click) = 'createComponent()' class = "btn btn-primary">Add Details</button>
+				<button type = "reset" class = "btn btn-secondary">Reset</button>
+			</form>
+		</div>
+	</div>
+</div>
